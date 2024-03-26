@@ -76,5 +76,6 @@ html, body{
     background-color: green;
     border: none;
     border-radius: 50%;
+    cursor: pointer;
     font-weight: 700;
 }
