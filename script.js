@@ -29,7 +29,7 @@ function increaseScore() {
     document.querySelector("#scoreval").textContent = score;
 }
 
-//function to compare if clicked number is right or not
+//function to compare clicked number
 document.querySelector("#bottom").addEventListener("click", function (dets) {
     var clickNum = Number(dets.target.textContent);
     if (clickNum === hitrn) {
