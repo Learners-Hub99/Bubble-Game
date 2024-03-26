@@ -1,50 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Bubble hit game</title>
 </head>
+
 <body>
     <!-- main section -->
     <div id="main" class="flex">
+
         <!-- box section -->
-       <div id="container" class="flex">
-        <!-- top section of box -->
-        <div id="top" class="flex">
-            <!-- hit box section -->
-            <div id="box" class="flex">
-                <h3>Hit</h3>
-                <div id="hitval" class="flex"></div>
+        <div id="container" class="flex">
+
+            <!-- top section of box -->
+            <div id="top" class="flex">
+
+                <!-- hit box section -->
+                <div id="box" class="flex">
+                    <h3>Hit</h3>
+                    <div id="hitval" class="flex"></div>
+                </div>
+
+                <!-- timer box section -->
+                <div id="box" class="flex">
+                    <h3>timer</h3>
+                    <div id="time" class="flex">60</div>
+                </div>
+
+                <!-- score box section -->
+                <div id="box" class="flex">
+                    <h3>Score</h3>
+                    <div id="scoreval" class="flex">0</div>
+                </div>
+
             </div>
-            
-            <!-- timer box section -->
-            <div id="box" class="flex">
-                <h3>timer</h3>
-                <div id="time" class="flex">60</div>
+
+            <!-- bottom section of box -->
+            <div id="bottom" class="flex">
+                <!-- bubbles will be created here -->
+                <div id="over">
+                    <h1>Game Over !!</h1>
+                    <p>Reload to play again !</p>
+                </div>
             </div>
-            
-            <!-- score box section -->
-            <div id="box" class="flex">
-                <h3>Score</h3>
-                <div id="scoreval" class="flex">0</div>
-            </div>
+
         </div>
 
-        <!-- bottom section of box -->
-        <div id="bottom" class="flex">
-            <!-- bubbles will be created here -->
-            <div id="over">
-                <h1>Game Over !!</h1>
-                <p>Reload to play again !</p>
-            </div>
-        </div>
-
-        </div>
     </div>
 
     <!-- Javascript lniked -->
     <script src="script.js"></script>
 </body>
+
 </html>
