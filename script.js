@@ -1,9 +1,10 @@
 // creating variables
-var clutter = "";
 var time = document.querySelector("#time");
 var timer = 60;
 var score = 0;
 var hitrn = 0;
+var clutter = "";
+var rnbubble;
 var overDiv = document.getElementById('over');
 
 // function to get new hit
@@ -16,8 +17,8 @@ function getNewHit() {
 function makeBubble() {
     // looping for creating bubble
     for (var i = 0; i < 78; i++) {
-        var rn = Math.floor(Math.random() * 10);
-        clutter += `<div id="bubble" class="flex">${rn}</div>`;
+        rnbubble = Math.floor(Math.random() * 10);
+        clutter += `<div id="bubble" class="flex">${rnbubble}</div>`;
     }
     //printing values in bubble
     document.querySelector('#bottom').innerHTML = clutter;
@@ -34,8 +35,8 @@ document.querySelector("#bottom").addEventListener("click", function (dets) {
     var clickNum = Number(dets.target.textContent);
     if (clickNum === hitrn) {
         increaseScore();
-        makeBubble();
         getNewHit();
+        makeBubble();
     }
 })
 
